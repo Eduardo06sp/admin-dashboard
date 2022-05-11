@@ -25,7 +25,121 @@ body {
 }
 
 nav {
+  display: grid;
+  font-size: 1.1rem;
   grid-area: nav;
+  grid-template-rows: 50px 300px 150px;
+  padding: 12px;
+  row-gap: 40px;
+}
+
+h1,
+nav ul li {
+  align-items: center;
+  column-gap: 10px;
+  display: flex;
+}
+
+nav ul {
+  align-items: center;
+  display: grid;
+  list-style-type: none;
+}
+
+nav ul li {
+  font-weight: bold;
+  height: 40px;
+  margin-left: 15px;
+}
+
+h1::before {
+  background: no-repeat url("../imgs/shield-account.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 45px;
+  width: 45px;
+}
+
+.home::before {
+  background: no-repeat url("../imgs/home.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.profile::before {
+  background: no-repeat url("../imgs/card-account-details.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.messages::before {
+  background: no-repeat url("../imgs/message-reply.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.history::before {
+  background: no-repeat url("../imgs/clock-time-three.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.tasks::before {
+  background: no-repeat url("../imgs/note-multiple.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.communities::before {
+  background: no-repeat url("../imgs/account-group.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.settings::before {
+  background: no-repeat url("../imgs/cog.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.support::before {
+  background: no-repeat url("../imgs/help-box.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.privacy::before {
+  background: no-repeat url("../imgs/shield-check.svg");
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
 }
 
 header {
