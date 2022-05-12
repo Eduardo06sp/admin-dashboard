@@ -144,6 +144,84 @@ h1::before {
 
 header {
   grid-area: header;
+  padding: 15px 30px;
+}
+
+.header-top-row,
+.header-action-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-row {
+  column-gap: 100px;
+}
+
+.search-area {
+  align-items: center;
+  column-gap: 20px;
+  display: flex;
+  flex: 0 1 700px;
+}
+
+.search-area img {
+  flex: 0;
+}
+
+.search-area input {
+  height: 40px;
+  width: 100%;
+}
+
+.notification-area {
+  align-items: center;
+  column-gap: 20px;
+  display: flex;
+  flex: 0;
+  font-weight: bold;
+}
+
+.header-action-row {
+  column-gap: 200px;
+}
+
+.greeting-area {
+  align-items: center;
+  display: grid;
+  font-weight: bold;
+  grid-template-areas:
+  "img greeting"
+  "img name";
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.greeting-area img {
+  grid-area: img;
+}
+
+.greeting-area p:nth-child(2) {
+  align-self: end;
+  grid-area: greeting;
+}
+
+.greeting-area p:last-child {
+  align-self: start;
+  font-size: 1.1em;
+  grid-area: name;
+}
+
+.actions-area {
+  align-items: center;
+  column-gap: 30px;
+  display: flex;
+}
+
+button {
+  border-radius: 5px;
+  font-weight: bold;
+  height: 40px;
+  padding: 10px 30px;
 }
 
 main {
