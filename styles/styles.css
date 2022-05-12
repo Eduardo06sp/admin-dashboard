@@ -20,7 +20,7 @@ body {
   grid-template-areas:
   "nav header"
   "nav content";
-  grid-template-rows: 180px 1fr;
+  grid-template-rows: 200px 1fr;
   grid-template-columns: minmax(max-content, 260px) 8fr;
 }
 
