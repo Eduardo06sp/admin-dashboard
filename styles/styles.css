@@ -225,5 +225,103 @@ button {
 }
 
 main {
+  display: grid;
   grid-area: content;
+  grid-template-areas:
+  "projects announcements"
+  "projects trending";
+  grid-template-columns: 7fr 3fr;
+  line-height: 1.4;
+  overflow: scroll;
+}
+
+main h2 {
+  margin-bottom: 10px;
+}
+
+.projects-section {
+  grid-area: projects;
+  padding: 20px;
+}
+
+.projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: min(250px);
+}
+
+.project {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.announcements-section {
+  grid-area: announcements;
+  padding: 20px;
+}
+
+.announcements {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.announcement {
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+}
+
+.announcement p:first-child {
+  font-weight: bold;
+}
+
+.trending-section {
+  grid-area: trending;
+  padding: 20px;
+}
+
+.trending {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: grid;
+  padding: 20px;
+  row-gap: 30px;
+}
+
+.trending-profile {
+  display: grid;
+  grid-template-areas:
+  "img handle"
+  "img headline";
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.trending-profile img {
+  grid-area: img;
+}
+
+.trending-profile p:nth-child(2) {
+  align-self: end;
+  grid-area: handle;
+}
+
+.trending-profile p:last-child {
+  align-self: start;
+  grid-area: headline;
 }
