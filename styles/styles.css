@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -17,6 +29,7 @@ html {
 
 body {
   display: grid;
+  font-family: "Roboto", sans-serif;
   grid-template-areas:
   "nav header"
   "nav content";
